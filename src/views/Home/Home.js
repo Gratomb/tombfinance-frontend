@@ -148,8 +148,8 @@ const Home = () => {
               <h2>Welcome to Hyeh Finance!</h2>
               <p>An algorithmic stablecoin on Fantom Opera, pegged to the price of 1 FTM via seigniorage.</p>
               <p>
-                Stake your HYEH-WFTM LP in the VC to earn YEHBUCKS rewards.
-                Then stake your earned YEHBUCKS in Dubai to earn more HYEH!
+                Stake your HYEH-WFTM LP in the VC to earn YEHSHARE rewards.
+                Then stake your earned YEHSHARE in Dubai to earn more HYEH!
               </p>
             </Box>
           </Paper>
@@ -185,7 +185,7 @@ const Home = () => {
               <Button color="primary" href="/masonry" variant="contained" style={{ marginRight: '10px' }}>
                 Stake Now
               </Button>
-              <Button href="/cemetery" variant="contained" style={{ marginRight: '10px' }}>
+              <Button color="primary" href="/masonry" variant="contained" style={{ marginRight: '10px' }}>
                 Farm Now
               </Button>
               <Button
@@ -198,13 +198,13 @@ const Home = () => {
                 Buy HYEH
               </Button>
               <Button variant="contained" target="_blank" href="https://spookyswap.finance/swap?outputCurrency=0x6437adac543583c4b31bf0323a0870430f5cc2e7" style={{ marginRight: '10px' }} className={classes.button}>
-                Buy YEHBUCKS
+                Buy YEHSHARE
               </Button>
               <Button variant="contained" target="_blank" href="https://dexscreener.com/fantom/0x83a52eff2e9d112e9b022399a9fd22a9db7d33ae" style={{ marginRight: '10px' }} className={classes.button}>
                 HYEH Chart
               </Button>
               <Button variant="contained" target="_blank" href="https://dexscreener.com/fantom/0xd352dac95a91afefb112dbbb3463ccfa5ec15b65" className={classes.button}>
-                YEHBUCKS Chart
+                YEHSHARE Chart
               </Button>
             </CardContent>
           </Card>
@@ -252,7 +252,7 @@ const Home = () => {
         <Grid item xs={12} sm={4}>
           <Card>
             <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>YEHBUCKS</h2>
+              <h2>YEHSHARE</h2>
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TSHARE');
@@ -352,7 +352,7 @@ const Home = () => {
         <Grid item xs={12} sm={6}>
           <Card>
             <CardContent align="center">
-              <h2>YEHBUCKS-FTM Spooky LP</h2>
+              <h2>YEHSHARE-FTM Spooky LP</h2>
               <Box mt={2}>
                 <CardIcon>
                   <TokenSymbol symbol="TSHARE-FTM-LP" />

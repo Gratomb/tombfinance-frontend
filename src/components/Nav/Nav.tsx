@@ -104,13 +104,13 @@ const Nav = () => {
               <Link color="textPrimary" to="/" className={classes.link}>
                 Home
               </Link>
-              <Link color="textPrimary" to="/cemetery" className={classes.link}>
-                Cemetery
+              <Link color="textPrimary" to="/vc" className={classes.link}>
+                VC
               </Link>
-              <Link color="textPrimary" to="/masonry" className={classes.link}>
-                Masonry
+              <Link color="textPrimary" to="/dubai" className={classes.link}>
+                Dubai
               </Link>
-              <Link color="textPrimary" to="/pit" className={classes.link}>
+              {/*<Link color="textPrimary" to="/pit" className={classes.link}>
                 Pit
               </Link>
               <Link color="textPrimary" to="/sbs" className={classes.link}>
@@ -121,7 +121,7 @@ const Nav = () => {
               </Link>
               <Link color="textPrimary" to="/regulations" className={classes.link}>
                 Regulations
-              </Link>
+        </Link>*/}
               <a href="https://docs.tomb.finance" className={classes.link}>
                 Docs
               </a>
@@ -140,7 +140,7 @@ const Nav = () => {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" noWrap>
-              Tomb Finance
+              Hyeh Finance
             </Typography>
 
             <Drawer
@@ -162,8 +162,8 @@ const Nav = () => {
               <Divider />
               <List>
                 <ListItemLink primary="Home" to="/" />
-                <ListItemLink primary="Cemetery" to="/cemetery" />
-                <ListItemLink primary="Masonry" to="/masonry" />
+                <ListItemLink primary="Cemetery" to="/vc" />
+                <ListItemLink primary="Masonry" to="/dubai" />
                 <ListItemLink primary="Pit" to="/pit" />
                 <ListItemLink primary="SBS" to="/sbs" />
                 <ListItemLink primary="Liquidity" to="/liquidity" />
