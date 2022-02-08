@@ -145,11 +145,11 @@ const Home = () => {
         <Grid item xs={12} sm={8}>
           <Paper>
             <Box p={4}>
-              <h2>Welcome to Tomb Finance</h2>
-              <p>The first algorithmic stablecoin on Fantom Opera, pegged to the price of 1 FTM via seigniorage.</p>
+              <h2>Welcome to Hyeh Finance!</h2>
+              <p>An algorithmic stablecoin on Fantom Opera, pegged to the price of 1 FTM via seigniorage.</p>
               <p>
-                Stake your TOMB-FTM LP in the Cemetery to earn TSHARE rewards.
-                Then stake your earned TSHARE in the Masonry to earn more TOMB!
+                Stake your HYEH-WFTM LP in the VC to earn YEHBUCKS rewards.
+                Then stake your earned YEHBUCKS in Dubai to earn more HYEH!
               </p>
             </Box>
           </Paper>
@@ -189,27 +189,31 @@ const Home = () => {
                 Farm Now
               </Button>
               <Button
-                color="primary"
                 target="_blank"
-                href={buyTombAddress}
+                href="https://spookyswap.finance/swap?outputCurrency=0x14def7584a6c52f470ca4f4b9671056b22f4ffde"
                 variant="contained"
                 style={{ marginRight: '10px' }}
                 className={classes.button}
               >
-                Buy TOMB
+                Buy HYEH
               </Button>
-              <Button variant="contained" target="_blank" href={buyTShareAddress} className={classes.button}>
-                Buy TSHARE
+              <Button variant="contained" target="_blank" href="https://spookyswap.finance/swap?outputCurrency=0x6437adac543583c4b31bf0323a0870430f5cc2e7" style={{ marginRight: '10px' }} className={classes.button}>
+                Buy YEHBUCKS
+              </Button>
+              <Button variant="contained" target="_blank" href="https://dexscreener.com/fantom/0x83a52eff2e9d112e9b022399a9fd22a9db7d33ae" style={{ marginRight: '10px' }} className={classes.button}>
+                HYEH Chart
+              </Button>
+              <Button variant="contained" target="_blank" href="https://dexscreener.com/fantom/0xd352dac95a91afefb112dbbb3463ccfa5ec15b65" className={classes.button}>
+                YEHBUCKS Chart
               </Button>
             </CardContent>
           </Card>
         </Grid>
-
         {/* TOMB */}
         <Grid item xs={12} sm={4}>
           <Card>
             <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>TOMB</h2>
+              <h2>HYEH</h2>
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TOMB');
@@ -248,7 +252,7 @@ const Home = () => {
         <Grid item xs={12} sm={4}>
           <Card>
             <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>TSHARE</h2>
+              <h2>YEHBUCKS</h2>
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TSHARE');
@@ -285,7 +289,7 @@ const Home = () => {
         <Grid item xs={12} sm={4}>
           <Card>
             <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>TBOND</h2>
+              <h2>YEHBOND</h2>
               <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TBOND');
@@ -320,7 +324,7 @@ const Home = () => {
         <Grid item xs={12} sm={6}>
           <Card>
             <CardContent align="center">
-              <h2>TOMB-FTM Spooky LP</h2>
+              <h2>HYEH-WFTM Spooky LP</h2>
               <Box mt={2}>
                 <CardIcon>
                   <TokenSymbol symbol="TOMB-FTM-LP" />
@@ -348,7 +352,7 @@ const Home = () => {
         <Grid item xs={12} sm={6}>
           <Card>
             <CardContent align="center">
-              <h2>TSHARE-FTM Spooky LP</h2>
+              <h2>YEHBUCKS-FTM Spooky LP</h2>
               <Box mt={2}>
                 <CardIcon>
                   <TokenSymbol symbol="TSHARE-FTM-LP" />
