@@ -7,8 +7,8 @@ import hyehLogoPNG from '../../assets/img/crypto_tomb_logo.png';
 import yehShareLogoPNG from '../../assets/img/crypto_tomb_share.bf1a6c52.png';
 import tBondLogo from '../../assets/img/crypto_tomb_bond.png';
 
-import tombFtmLpLogo from '../../assets/img/tomb_ftm_lp.png';
-import tshareFtmLpLogo from '../../assets/img/tshare_ftm_lp.png';
+import hyehFtmLpLogo from '../../assets/img/hyeh_ftm_lp.png';
+import yehShareFtmLpLogo from '../../assets/img/yehshare_ftm_lp.png';
 
 import wftmLogo from '../../assets/img/ftm_logo_blue.svg';
 import usdcLogo from '../../assets/img/spooky.png';
@@ -27,8 +27,8 @@ const logosBySymbol: { [title: string]: string } = {
   TOMB: tombLogo,
   HYEH: hyehLogo,
   YEHSHARE: yehShareLogo,
-  'TOMB-FTM-LP': tombFtmLpLogo,
-  'TSHARE-FTM-LP': tshareFtmLpLogo,
+  'TOMB-FTM-LP': hyehFtmLpLogo,
+  'TSHARE-FTM-LP': yehShareFtmLpLogo,
 };
 
 type LogoProps = {
