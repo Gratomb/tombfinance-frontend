@@ -148,12 +148,11 @@ const Home = () => {
               <h2>Welcome to Hyeh Finance,</h2>
               <p> The first seignorage protocol across all chains delivering impactful, real-world utility.</p>
               <p> Ever think you could change the world while printing? Well, now you can. </p>
-              <p>
               <p>We offer an algorithmic stablecoin on Fantom Opera, $HYEH, pegged to the price of 1 FTM.</p>
               <p>
-                  Stake your HYEH-WFTM LP in the VC to earn YEHSHARE rewards.</p>
+                  Stake your HYEH-WFTM LP in the <StyledLink href="/vc">VC</StyledLink> to earn YEHSHARE rewards.</p>
               <p>
-                Then stake your earned YEHSHARE in Dubai to earn more HYEH!
+                Then stake your earned YEHSHARE in <StyledLink href="/farms">Dubai</StyledLink> to earn more HYEH!
               </p>
             </Box>
           </Paper>
@@ -166,7 +165,7 @@ const Home = () => {
     <Grid item  xs={12} sm={12} justify="center"  style={{ margin: '12px', display: 'flex' }}>
             <Alert variant="filled" severity="warning">
               <b>
-      We're not an ordinary fork. We deliver real-world utility. Check our <StyledLink target="_blank" href="https://docs.tomb.finance">docs</StyledLink> to learn more.</b>
+     Curious about how we're changing the world through a fork? Check our <StyledLink target="_blank" href="https://docs.tomb.finance">docs</StyledLink> to learn more.</b>
             </Alert>
         </Grid>
         </Grid>
