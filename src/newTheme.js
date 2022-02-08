@@ -30,8 +30,8 @@ const newTheme = createMuiTheme({
     },
   },
   typography: {
-    color: '#2c2560',
-    fontFamily: ['"Poppins"', 'sans-serif'].join(','),
+    color: '#E6E9EE',
+    fontFamily: ['"Gilroy"', 'sans-serif'].join(','),
   },
 });
 
