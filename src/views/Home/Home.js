@@ -146,13 +146,11 @@ const Home = () => {
           <Paper>
             <Box p={4}>
               <h2>Welcome to Hyeh Finance,</h2>
-              <p> The first seignorage protocol across all chains delivering impactful, real-world utility.</p>
-              <p> Ever think you could change the world while printing? Well, now you can. </p>
-              <p>We offer an algorithmic stablecoin on Fantom Opera, $HYEH, pegged to the price of 1 FTM.</p>
-              <p>
-                  Stake your HYEH-WFTM LP in the <StyledLink href="/vc">VC</StyledLink> to earn YEHSHARE rewards.</p>
-              <p>
-                Then stake your earned YEHSHARE in <StyledLink href="/farms">Dubai</StyledLink> to earn more HYEH!
+              <p> The first seignorage protocol across all chains delivering impactful, real-world utility. Ever think you could change the world while printing? Well, now you can. </p>
+              <p> $HYEH is our algorithmic stablecoin pegged to the price of 1 FTM.</p>
+              <p> Stake your HYEH-WFTM LP in the <StyledLink href="/vc">VC</StyledLink> to earn YEHSHARE rewards.</p>
+              <p> Then stake your earned YEHSHARE in <StyledLink href="/dubai">Dubai</StyledLink> to earn more HYEH!</p>
+              <p> Together, let's print while also printing for those in need. 
               </p>
             </Box>
           </Paper>
@@ -165,7 +163,7 @@ const Home = () => {
     <Grid item  xs={12} sm={12} justify="center"  style={{ margin: '12px', display: 'flex' }}>
             <Alert variant="filled" severity="warning">
               <b>
-     Curious about how we're changing the world through a fork? Check our <StyledLink target="_blank" href="https://docs.tomb.finance">docs</StyledLink> to learn more.</b>
+     Curious about how we're planning to revolutionize the ecosystem and changing the world? Check our <StyledLink target="_blank" href="https://docs.tomb.finance">docs</StyledLink> to learn more.</b>
             </Alert>
         </Grid>
         </Grid>
