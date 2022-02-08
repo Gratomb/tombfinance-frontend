@@ -162,7 +162,7 @@ const Home = () => {
     <Grid item  xs={12} sm={12} justify="center"  style={{ margin: '12px', display: 'flex' }}>
             <Alert variant="filled" severity="warning">
               <b>
-      Please visit our <StyledLink target="_blank" href="https://docs.tomb.finance">documentation</StyledLink> before purchasing TOMB or TSHARE!</b>
+      We're not an ordinary fork. We deliver real-world utility. Check our <StyledLink target="_blank" href="https://docs.tomb.finance">docs</StyledLink> to learn more.</b>
             </Alert>
         </Grid>
         </Grid>
@@ -352,7 +352,7 @@ const Home = () => {
         <Grid item xs={12} sm={6}>
           <Card>
             <CardContent align="center">
-              <h2>YEHSHARE-FTM Spooky LP</h2>
+              <h2>YEHSHARE-WFTM Spooky LP</h2>
               <Box mt={2}>
                 <CardIcon>
                   <TokenSymbol symbol="TSHARE-FTM-LP" />
