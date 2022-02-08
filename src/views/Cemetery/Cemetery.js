@@ -35,13 +35,13 @@ const Cemetery = () => {
           {!!account ? (
             <Container maxWidth="lg">
               <Typography color="textPrimary" align="center" variant="h3" gutterBottom>
-                Cemetery
+                VC
               </Typography>
 
               <Box mt={5}>
                 <div hidden={activeBanks.filter((bank) => bank.sectionInUI === 2).length === 0}>
                   <Typography color="textPrimary" variant="h4" gutterBottom>
-                    Earn TSHARE by staking LP
+                    Earn YEHSHARE by staking LP
                   </Typography>
                   <Grid container spacing={3}>
                     {activeBanks
@@ -54,9 +54,9 @@ const Cemetery = () => {
                   </Grid>
                 </div>
 
-                <div hidden={activeBanks.filter((bank) => bank.sectionInUI === 1).length === 0}>
+               {/*} <div hidden={activeBanks.filter((bank) => bank.sectionInUI === 1).length === 0}>
                   <Typography color="textPrimary" variant="h4" gutterBottom style={{ marginTop: '20px' }}>
-                    Earn TOMB by staking LP
+                    Earn HYEH by staking LP
                   </Typography>
                   <Alert variant="filled" severity="warning">
                     All below pools have ended. Please unstake and collect your rewards.
@@ -70,12 +70,15 @@ const Cemetery = () => {
                         </React.Fragment>
                       ))}
                   </Grid>
-                </div>
+                      </div>*/}
 
                 <div hidden={activeBanks.filter((bank) => bank.sectionInUI === 0).length === 0}>
                   <Typography color="textPrimary" variant="h4" gutterBottom style={{ marginTop: '20px' }}>
                     Genesis Pools
                   </Typography>
+                  <Alert variant="filled" severity="warning">
+                    Please note: all Genesis Pool deposits will incur a 0.5% deposit fee which will contribute towards the initial donation from the Treasury charity. 
+                  </Alert>
                   <Grid container spacing={3}>
                     {activeBanks
                       .filter((bank) => bank.sectionInUI === 0)

@@ -273,7 +273,7 @@ export class TombFinance {
         const rewardPerSecond = await poolContract.tombPerSecond();
         if (depositTokenName === 'WFTM') {
           return rewardPerSecond.mul(6000).div(11000).div(24);
-        } else if (depositTokenName === 'BOO') {
+        } else if (depositTokenName === 'USDC') {
           return rewardPerSecond.mul(2500).div(11000).div(24);
         } else if (depositTokenName === 'ZOO') {
           return rewardPerSecond.mul(1000).div(11000).div(24);
