@@ -275,9 +275,9 @@ export class TombFinance {
           return rewardPerSecond.mul(6000).div(11000).div(24);
         } else if (depositTokenName === 'USDC') {
           return rewardPerSecond.mul(2500).div(11000).div(24);
-        } else if (depositTokenName === 'ZOO') {
+        } else if (depositTokenName === 'TSHARE') {
           return rewardPerSecond.mul(1000).div(11000).div(24);
-        } else if (depositTokenName === 'SHIBA') {
+        } else if (depositTokenName === 'TOMB') {
           return rewardPerSecond.mul(1500).div(11000).div(24);
         }
         return rewardPerSecond.div(24);
@@ -316,7 +316,7 @@ export class TombFinance {
         tokenPrice = await this.getLPTokenPrice(token, this.TOMB, true);
       } else if (tokenName === 'TSHARE-FTM-LP') {
         tokenPrice = await this.getLPTokenPrice(token, this.TSHARE, false);
-      } else if (tokenName === 'SHIBA') {
+      } else if (tokenName === 'TOMB') {
         tokenPrice = await this.getTokenPriceFromSpiritswap(token);
       } else {
         tokenPrice = await this.getTokenPriceFromPancakeswap(token);

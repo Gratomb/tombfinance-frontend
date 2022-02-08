@@ -79,7 +79,7 @@ const Cemetery = () => {
                   <Alert variant="filled" severity="warning">
                     Please note: all Genesis Pool deposits will incur a 0.5% deposit fee which will contribute towards the initial donation from the Treasury charity. 
                   </Alert>
-                  <Grid container spacing={3}>
+                  <Grid container spacing={3} style={{ marginTop: '20px' }}>
                     {activeBanks
                       .filter((bank) => bank.sectionInUI === 0)
                       .map((bank) => (
