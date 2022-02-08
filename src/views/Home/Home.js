@@ -145,10 +145,14 @@ const Home = () => {
         <Grid item xs={12} sm={8}>
           <Paper>
             <Box p={4}>
-              <h2>Welcome to Hyeh Finance!</h2>
-              <p>An algorithmic stablecoin on Fantom Opera, pegged to the price of 1 FTM via seigniorage.</p>
+              <h2>Welcome to Hyeh Finance,</h2>
+              <p> The first seignorage protocol across all chains delivering impactful, real-world utility.</p>
+              <p> Ever think you could change the world while printing? Well, now you can. </p>
               <p>
-                Stake your HYEH-WFTM LP in the VC to earn YEHSHARE rewards.
+              <p>We offer an algorithmic stablecoin on Fantom Opera, $HYEH, pegged to the price of 1 FTM.</p>
+              <p>
+                  Stake your HYEH-WFTM LP in the VC to earn YEHSHARE rewards.</p>
+              <p>
                 Then stake your earned YEHSHARE in Dubai to earn more HYEH!
               </p>
             </Box>
