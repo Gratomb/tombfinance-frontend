@@ -120,8 +120,8 @@ export class TombFinance {
     const lpToken = this.externalTokens[name];
     const lpTokenSupplyBN = await lpToken.totalSupply();
     const lpTokenSupply = getDisplayBalance(lpTokenSupplyBN, 18);
-    const token0 = name.startsWith('HYEH') ? this.TOMB : this.TSHARE;
-    const isTomb = name.startsWith('HYEH');
+    const token0 = name.startsWith('TOMB') ? this.TOMB : this.TSHARE;
+    const isTomb = name.startsWith('TOMB');
     const tokenAmountBN = await token0.balanceOf(lpToken.address);
     const tokenAmount = getDisplayBalance(tokenAmountBN, 18);
 
@@ -524,14 +524,14 @@ export class TombFinance {
   async getWFTMPriceFromPancakeswap(): Promise<string> {
     const ready = await this.provider.ready;
     if (!ready) return;
-    const { WFTM, FUSDT } = this.externalTokens;
+    const { WFTM, USDC } = this.externalTokens;
     try {
-      const fusdt_wftm_lp_pair = this.externalTokens['USDT-FTM-LP'];
-      let ftm_amount_BN = await WFTM.balanceOf(fusdt_wftm_lp_pair.address);
+      const usdc = this.externalTokens['USDT-FTM-LP'];
+      let ftm_amount_BN = await WFTM.balanceOf(usdc_wftm_lp_pair.address);
       let ftm_amount = Number(getFullDisplayBalance(ftm_amount_BN, WFTM.decimal));
-      let fusdt_amount_BN = await FUSDT.balanceOf(fusdt_wftm_lp_pair.address);
-      let fusdt_amount = Number(getFullDisplayBalance(fusdt_amount_BN, FUSDT.decimal));
-      return (fusdt_amount / ftm_amount).toString();
+      let usdc_amount_BN = await USDC.balanceOf(usdc_wftm_lp_pair.address);
+      let usdc_amount = Number(getFullDisplayBalance(usdc_amount_BN, USDC.decimal));
+      return (usdc_amount / ftm_amount).toString();
     } catch (err) {
       console.error(`Failed to fetch token price of WFTM: ${err}`);
     }
