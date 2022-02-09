@@ -28,7 +28,7 @@ const logosBySymbol: { [title: string]: string } = {
   WFTM: wftmLogo,
   USDC: usdcLogo,
   'HYEH-WFTM LP': hyehFtmLpLogo,
-  'HYEH-WFTM LP': yehShareFtmLpLogo,
+  'YEHSHARE-WFTM LP': yehShareFtmLpLogo,
 };
 
 type LogoProps = {
