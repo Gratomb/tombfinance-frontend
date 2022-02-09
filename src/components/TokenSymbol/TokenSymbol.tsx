@@ -11,10 +11,11 @@ import hyehFtmLpLogo from '../../assets/img/hyeh_ftm_lp.png';
 import yehShareFtmLpLogo from '../../assets/img/yehshare_ftm_lp.png';
 
 import wftmLogo from '../../assets/img/ftm_logo_blue.svg';
-import wethLogo from '../../assets/img/spooky.png';
+import BondLogo from '../../assets/img/spooky.png';
 import tombLogo from '../../assets/img/tomb_logo.png';
 import tShareLogo from '../../assets/img/tshare_logo.png';
-import daiLogo from '../../assets/img/tshare_logo.png';
+import daiLogo from '../../assets/img/dai_logo.png';
+import:
 
 const logosBySymbol: { [title: string]: string } = {
   //Real tokens
@@ -24,7 +25,7 @@ const logosBySymbol: { [title: string]: string } = {
   TSHARE: tShareLogo,
   TBOND: tBondLogo,
   WFTM: wftmLogo,
-  WETH: wethLogo,
+  BOND: bondLogo,
   TOMB: tombLogo,
   HYEH: hyehLogo,
   YEHSHARE: yehShareLogo,
