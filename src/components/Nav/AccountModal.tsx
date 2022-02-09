@@ -27,26 +27,26 @@ const AccountModal: React.FC<ModalProps> = ({ onDismiss }) => {
 
       <Balances>
         <StyledBalanceWrapper>
-          <TokenSymbol symbol="TOMB" />
+          <TokenSymbol symbol="HYEH" />
           <StyledBalance>
             <StyledValue>{displayTombBalance}</StyledValue>
-            <Label text="TOMB Available" />
+            <Label text="HYEH Available" />
           </StyledBalance>
         </StyledBalanceWrapper>
 
         <StyledBalanceWrapper>
-          <TokenSymbol symbol="TSHARE" />
+          <TokenSymbol symbol="YEHSHARE" />
           <StyledBalance>
             <StyledValue>{displayTshareBalance}</StyledValue>
-            <Label text="TSHARE Available" />
+            <Label text="YEHSHARE Available" />
           </StyledBalance>
         </StyledBalanceWrapper>
 
         <StyledBalanceWrapper>
-          <TokenSymbol symbol="TBOND" />
+          <TokenSymbol symbol="YEHBOND" />
           <StyledBalance>
             <StyledValue>{displayTbondBalance}</StyledValue>
-            <Label text="TBOND Available" />
+            <Label text="YEHBOND Available" />
           </StyledBalance>
         </StyledBalanceWrapper>
       </Balances>
