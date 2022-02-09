@@ -162,7 +162,7 @@ const Home = () => {
     <Grid item  xs={12} sm={12} justify="center"  style={{ margin: '12px', display: 'flex' }}>
             <Alert variant="filled" severity="warning">
               <b>
-     Curious about how we're planning to revolutionize the ecosystem and change the world? Check our <StyledLink target="_blank" href="https://docs.tomb.finance">docs</StyledLink> to learn more.</b>
+     Curious about how we're planning to revolutionize the ecosystem and change the world? Check our <StyledLink target="_blank" href="https://hyeeeehfinance.gitbook.io/hyeh-finance/">docs</StyledLink> to learn more.</b>
             </Alert>
         </Grid>
         </Grid>
