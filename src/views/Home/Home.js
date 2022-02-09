@@ -227,7 +227,7 @@ const Home = () => {
               </Button>
               <Box mt={2}>
                 <CardIcon>
-                  <TokenSymbol symbol="TOMB" />
+                  <TokenSymbol symbol="HYEH" />
                 </CardIcon>
               </Box>
               Current Price
@@ -266,7 +266,7 @@ const Home = () => {
               </Button>
               <Box mt={2}>
                 <CardIcon>
-                  <TokenSymbol symbol="TSHARE" />
+                  <TokenSymbol symbol="YEHSHARE" />
                 </CardIcon>
               </Box>
               Current Price
