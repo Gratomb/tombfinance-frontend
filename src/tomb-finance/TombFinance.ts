@@ -228,7 +228,7 @@ export class TombFinance {
     const depositTokenPrice = await this.getDepositTokenPriceInDollars(bank.depositTokenName, depositToken);
     const stakeInPool = await depositToken.balanceOf(bank.address);
     const TVL = Number(depositTokenPrice) * Number(getDisplayBalance(stakeInPool, depositToken.decimal));
-    const stat = bank.earnTokenName === 'HYEH' ? await this.getTombStat() : await this.getShareStat();
+    const stat = bank.earnTokenName === 'TOMB' ? await this.getTombStat() : await this.getShareStat();
     const tokenPerSecond = await this.getTokenPerSecond(
       bank.earnTokenName,
       bank.contract,
@@ -282,8 +282,8 @@ export class TombFinance {
       }
       const poolStartTime = await poolContract.poolStartTime();
       const startDateTime = new Date(poolStartTime.toNumber() * 1000);
-      const FOUR_DAYS = 4 * 24 * 60 * 60 * 1000;
-      if (Date.now() - startDateTime.getTime() > FOUR_DAYS) {
+      const TWO_DAYS = 2 * 24 * 60 * 60 * 1000;
+      if (Date.now() - startDateTime.getTime() > TWO_DAYS) {
         return await poolContract.epochTombPerSecond(1);
       }
       return await poolContract.epochTombPerSecond(0);
@@ -405,7 +405,7 @@ export class TombFinance {
     const pool = this.contracts[poolName];
     try {
       if (earnTokenName === 'HYEH') {
-        return await pool.pendingHYEH(poolId, account);
+        return await pool.pendingTOMB(poolId, account);
       } else {
         return await pool.pendingShare(poolId, account);
       }
