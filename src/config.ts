@@ -54,7 +54,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     finished: false,
     multiplier: '30x',
     sort: 1,
-    closedForStaking: true,
+    closedForStaking: false,
   },
   TombBooRewardPool: {
     name: 'Earn HYEH by WETH',
@@ -66,7 +66,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     finished: false,
     multiplier: '25x',
     sort: 2,
-    closedForStaking: true,
+    closedForStaking: false,
   },
   TombShibaRewardPool: {
     name: 'Earn HYEH by TOMB',
@@ -78,7 +78,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     finished: false,
     multiplier: '30x',
     sort: 3,
-    closedForStaking: true,
+    closedForStaking: false,
   },
   TombZooRewardPool: {
     name: 'Earn HYEH by TSHARE',
@@ -90,7 +90,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     finished: false,
     multiplier: '45x',
     sort: 4,
-    closedForStaking: true,
+    closedForStaking: false,
   },
   TombFtmLPTombRewardPool: {
     name: 'Earn TOMB by TOMB-FTM LP',
