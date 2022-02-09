@@ -17,7 +17,7 @@ const configurations: { [env: string]: Configuration } = {
       YEHSHARE: ['0x1af917f53c48f50db5bc6cee1464b631bc1f40f9', 18],
       HYEH: ['0x0cb0a530cb554f2a2dfdd48090f61234865425c4', 18],
       TOMB: ['0x6c021ae822bea943b2e66552bde1d2696a53fbb7', 18],
-      '2SHARE': ['0xc54a1684fd1bef1f077a336e6be4bd9a3096a6ca', 18]
+      '2SHARE': ['0xc54a1684fd1bef1f077a336e6be4bd9a3096a6ca', 18],
       DAI: ['0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e', 18],
       'USDT-FTM-LP': ['0x2b4C76d0dc16BE1C31D4C1DC53bF9B45987Fc75c', 18],
       'HYEH-WFTM LP': ['0x7B065c1Bb925c3ae7d7ABaA406aD939bEFe2eb11', 18],
