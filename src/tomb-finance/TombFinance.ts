@@ -120,8 +120,8 @@ export class TombFinance {
     const lpToken = this.externalTokens[name];
     const lpTokenSupplyBN = await lpToken.totalSupply();
     const lpTokenSupply = getDisplayBalance(lpTokenSupplyBN, 18);
-    const token0 = name.startsWith('HYEH') ? this.TOMB : this.TSHARE;
-    const isTomb = name.startsWith('HYEH');
+    const token0 = name.startsWith('TOMB') ? this.TOMB : this.TSHARE;
+    const isTomb = name.startsWith('TOMB');
     const tokenAmountBN = await token0.balanceOf(lpToken.address);
     const tokenAmount = getDisplayBalance(tokenAmountBN, 18);
 
