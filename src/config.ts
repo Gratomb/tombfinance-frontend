@@ -43,7 +43,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
   sort: the order of the pool
   */
   TombFtmRewardPool: {
-    name: 'Earn TOMB by FTM',
+    name: 'Earn HYEH by FTM',
     poolId: 0,
     sectionInUI: 0,
     contract: 'TombFtmRewardPool',
