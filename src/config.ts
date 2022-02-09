@@ -12,8 +12,8 @@ const configurations: { [env: string]: Configuration } = {
     deployments: require('./tomb-finance/deployments/deployments.mainnet.json'),
     externalTokens: {
       WFTM: ['0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83', 18],
-      FUSDT: ['0x04068DA6C83AFCFA0e13ba15A6696662335D5B75', 6], // This is actually usdc on mainnet not fusdt
-      USDC: ['0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE', 18],
+      FUSDT: ['0x049d68029688eabf473097a2fc38ef61633a3c7a', 6], // This is actually usdc on mainnet not fusdt
+      USDC: ['0x04068da6c83afcfa0e13ba15a6696662335d5b75', 6],
       TSHARE: ['0x4cdf39285d7ca8eb3f090fda0c069ba5f4145b37', 18],
       TOMB: ['0x9ba3e4f84a34df4e08c112e1a0ff148b81655615', 9],
       'USDT-FTM-LP': ['0x2b4C76d0dc16BE1C31D4C1DC53bF9B45987Fc75c', 18],

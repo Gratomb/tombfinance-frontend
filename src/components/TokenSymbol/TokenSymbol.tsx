@@ -5,30 +5,30 @@ import hyehLogo from '../../assets/img/crypto_tomb_logo.png';
 import yehShareLogo from '../../assets/img/crypto_tomb_share.bf1a6c52.png';
 import hyehLogoPNG from '../../assets/img/crypto_tomb_logo.png';
 import yehShareLogoPNG from '../../assets/img/crypto_tomb_share.bf1a6c52.png';
-import tBondLogo from '../../assets/img/crypto_tomb_bond.png';
+import yehBondLogo from '../../assets/img/crypto_tomb_bond.png';
 
 import hyehFtmLpLogo from '../../assets/img/hyeh_ftm_lp.png';
 import yehShareFtmLpLogo from '../../assets/img/yehshare_ftm_lp.png';
 
 import wftmLogo from '../../assets/img/ftm_logo_blue.svg';
 import usdcLogo from '../../assets/img/spooky.png';
-import tombLogo from '../../assets/img/tomb_logo.png';
-import tShareLogo from '../../assets/img/tshare_logo.png';
+import twombLogo from '../../assets/img/tomb_logo.png';
+import twoShareLogo from '../../assets/img/tshare_logo.png';
 
 const logosBySymbol: { [title: string]: string } = {
   //Real tokens
   //=====================
+  HYEH: hyehLogo,
   HYEHPNG: hyehLogoPNG,
+  YEHSHARE: yehShareLogo,
   YEHSHAREPNG: yehShareLogoPNG,
-  TSHARE: tShareLogo,
-  TBOND: tBondLogo,
+  TWOMB: twombLogo,
+  TWOSHARE: twoShareLogo,
+  YEHBOND: yehBondLogo,
   WFTM: wftmLogo,
   USDC: usdcLogo,
-  TOMB: tombLogo,
-  HYEH: hyehLogo,
-  YEHSHARE: yehShareLogo,
-  'TOMB-FTM-LP': hyehFtmLpLogo,
-  'TSHARE-FTM-LP': yehShareFtmLpLogo,
+  'HYEH-WFTM LP': hyehFtmLpLogo,
+  'HYEH-WFTM LP': yehShareFtmLpLogo,
 };
 
 type LogoProps = {
