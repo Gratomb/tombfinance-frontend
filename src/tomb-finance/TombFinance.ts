@@ -94,9 +94,9 @@ export class TombFinance {
   //===================================================================
 
   async getTombStat(): Promise<TokenStat> {
-    const { tomb } = this.contracts;
+    const { TombFtmRewardPool } = this.contracts;
     const supply = await this.TOMB.totalSupply();
-    const tombRewardPoolSupply = await this.TOMB.balanceOf(tomb.address);
+    const tombRewardPoolSupply = await this.TOMB.balanceOf(TombFtmRewardPool.address);
     const tombCirculatingSupply = supply
       .sub(tombRewardPoolSupply)
     const priceInFTM = await this.getTokenPriceFromPancakeswap(this.TOMB);
