@@ -530,7 +530,7 @@ export class TombFinance {
       let ftm_amount_BN = await WFTM.balanceOf(usdc_wftm_lp_pair.address);
       let ftm_amount = Number(getFullDisplayBalance(ftm_amount_BN, WFTM.decimal));
       let usdc_amount_BN = await USDC.balanceOf(usdc_wftm_lp_pair.address);
-      let usdc_amount = Number(getFullDisplayBalance(usdc_amount_BN, FUSDT.decimal));
+      let usdc_amount = Number(getFullDisplayBalance(usdc_amount_BN, USDC.decimal));
       return (usdc_amount / ftm_amount).toString();
     } catch (err) {
       console.error(`Failed to fetch token price of WFTM: ${err}`);
