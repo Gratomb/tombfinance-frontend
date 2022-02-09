@@ -45,7 +45,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
   sort: the order of the pool
   */
   TombFtmRewardPool: {
-    name: 'Earn HYEH by FTM',
+    name: 'Earn HYEH by WFTM',
     poolId: 0,
     sectionInUI: 0,
     contract: 'TombFtmRewardPool',
@@ -111,23 +111,23 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     closedForStaking: true,
   },
   TombFtmLPTShareRewardPool: {
-    name: 'Earn TSHARE by TOMB-FTM LP',
+    name: 'Earn YEHSHARE by HYEH-WFTM LP',
     poolId: 0,
     sectionInUI: 2,
     contract: 'TombFtmLPTShareRewardPool',
-    depositTokenName: 'TOMB-FTM-LP',
-    earnTokenName: 'TSHARE',
+    depositTokenName: 'HYEH-WFTM LP',
+    earnTokenName: 'YEHSHARE',
     finished: false,
     sort: 6,
     closedForStaking: false,
   },
   TshareFtmLPTShareRewardPool: {
-    name: 'Earn TSHARE by TSHARE-FTM LP',
+    name: 'Earn YEHSHARE by YEHSHARE-WFTM LP',
     poolId: 1,
     sectionInUI: 2,
     contract: 'TshareFtmLPTShareRewardPool',
-    depositTokenName: 'TSHARE-FTM-LP',
-    earnTokenName: 'TSHARE',
+    depositTokenName: 'YEHSHARE-WFTM LP',
+    earnTokenName: 'YEHSHARE',
     finished: false,
     sort: 7,
     closedForStaking: false,
