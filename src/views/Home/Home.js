@@ -169,9 +169,8 @@ const Home = () => {
 
         {/* TVL */}
         <Grid item xs={12} sm={4}>
-          <Card>
-            <CardContent align="center">
-              <h2>Total Value Locked</h2>
+          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
+              <h2>Total Val-yeh Locked</h2>
               <CountUp style={{ fontSize: '25px' }} end={TVL} separator="," prefix="$" />
             </CardContent>
           </Card>
@@ -179,7 +178,7 @@ const Home = () => {
 
         {/* Wallet */}
         <Grid item xs={12} sm={8}>
-          <Card style={{ height: '100%' }}>
+        <Card style={{ height: '100%', backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
             <CardContent align="center" style={{ marginTop: '2.5%' }}>
               {/* <h2 style={{ marginBottom: '20px' }}>Wallet Balance</h2> */}
               <Button color="primary" href="/masonry" variant="contained" style={{ marginRight: '10px' }}>
@@ -190,20 +189,20 @@ const Home = () => {
               </Button>
               <Button
                 target="_blank"
-                href="https://spookyswap.finance/swap?outputCurrency=0x14def7584a6c52f470ca4f4b9671056b22f4ffde"
+                href="https://spookyswap.finance/swap?outputCurrency=0x0cb0a530cb554f2a2dfdd48090f61234865425c4"
                 variant="contained"
                 style={{ marginRight: '10px' }}
                 className={classes.button}
               >
                 Buy HYEH
               </Button>
-              <Button variant="contained" target="_blank" href="https://spookyswap.finance/swap?outputCurrency=0x6437adac543583c4b31bf0323a0870430f5cc2e7" style={{ marginRight: '10px' }} className={classes.button}>
+              <Button variant="contained" target="_blank" href="https://spookyswap.finance/swap?outputCurrency=0x1af917f53c48f50db5bc6cee1464b631bc1f40f9" style={{ marginRight: '10px' }} className={classes.button}>
                 Buy YEHSHARE
               </Button>
-              <Button variant="contained" target="_blank" href="https://dexscreener.com/fantom/0x83a52eff2e9d112e9b022399a9fd22a9db7d33ae" style={{ marginRight: '10px' }} className={classes.button}>
+              <Button variant="contained" target="_blank" href="https://dexscreener.com/fantom/0x7b065c1bb925c3ae7d7abaa406ad939befe2eb11" style={{ marginRight: '10px' }} className={classes.button}>
                 HYEH Chart
               </Button>
-              <Button variant="contained" target="_blank" href="https://dexscreener.com/fantom/0xd352dac95a91afefb112dbbb3463ccfa5ec15b65" className={classes.button}>
+              <Button variant="contained" target="_blank" href="https://dexscreener.com/fantom/0x26d6a54c72507f387fa3a0aae5c2b62098a49786" className={classes.button}>
                 YEHSHARE Chart
               </Button>
             </CardContent>
@@ -211,7 +210,7 @@ const Home = () => {
         </Grid>
         {/* TOMB */}
         <Grid item xs={12} sm={4}>
-          <Card>
+          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
             <CardContent align="center" style={{ position: 'relative' }}>
               <h2>HYEH</h2>
               {/*<Button
@@ -225,9 +224,9 @@ const Home = () => {
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
               </Button>*/}
-              <Box mt={2}>
-                <CardIcon>
-                  <TokenSymbol symbol="HYEH" />
+              <Box mt={2} style={{ backgroundColor: "transparent !important" }}>
+                <CardIcon style={{ backgroundColor: "transparent !important" }}>
+                  <TokenSymbol symbol="TOMB" style={{ backgroundColor: "transparent !important" }} />
                 </CardIcon>
               </Box>
               Current Price
@@ -250,7 +249,7 @@ const Home = () => {
 
         {/* TSHARE */}
         <Grid item xs={12} sm={4}>
-          <Card>
+          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
             <CardContent align="center" style={{ position: 'relative' }}>
               <h2>YEHSHARE</h2>
               {/*<Button
@@ -266,7 +265,7 @@ const Home = () => {
               </Button>*/}
               <Box mt={2}>
                 <CardIcon>
-                  <TokenSymbol symbol="YEHSHARE" />
+                  <TokenSymbol symbol="TSHARE" />
                 </CardIcon>
               </Box>
               Current Price
@@ -287,7 +286,7 @@ const Home = () => {
 
         {/* TBOND */}
         <Grid item xs={12} sm={4}>
-          <Card>
+        <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
             <CardContent align="center" style={{ position: 'relative' }}>
               <h2>YEHBOND</h2>
               {/*<Button
@@ -322,7 +321,7 @@ const Home = () => {
           </Card>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Card>
+        <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
             <CardContent align="center">
               <h2>HYEH-WFTM Spooky LP</h2>
               <Box mt={2}>
@@ -337,7 +336,7 @@ const Home = () => {
             </Box>*/}
               <Box mt={2}>
                 <span style={{ fontSize: '26px' }}>
-                  {tombLPStats?.tokenAmount ? tombLPStats?.tokenAmount : '-.--'} TOMB /{' '}
+                  {tombLPStats?.tokenAmount ? tombLPStats?.tokenAmount : '-.--'} HYEH /{' '}
                   {tombLPStats?.ftmAmount ? tombLPStats?.ftmAmount : '-.--'} FTM
                 </span>
             </Box>
@@ -350,7 +349,7 @@ const Home = () => {
           </Card>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Card>
+        <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
             <CardContent align="center">
               <h2>YEHSHARE-WFTM Spooky LP</h2>
               <Box mt={2}>
@@ -365,7 +364,7 @@ const Home = () => {
           </Box>*/}
               <Box mt={2}>
                 <span style={{ fontSize: '26px' }}>
-                  {tshareLPStats?.tokenAmount ? tshareLPStats?.tokenAmount : '-.--'} TSHARE /{' '}
+                  {tshareLPStats?.tokenAmount ? tshareLPStats?.tokenAmount : '-.--'} YEHSHARE /{' '}
                   {tshareLPStats?.ftmAmount ? tshareLPStats?.ftmAmount : '-.--'} FTM
                 </span>
               </Box>
