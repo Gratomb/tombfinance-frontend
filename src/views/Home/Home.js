@@ -148,8 +148,8 @@ const Home = () => {
               <h2>Welcome to Hyeh Finance,</h2>
               <p> The first seigniorage protocol across all chains delivering impactful, real-world utility. Ever think you could change the world while printing? Well, now you can. </p>
               <p> $HYEH is our native algorithmic stablecoin pegged to the price of 1 $FTM.</p>
-              <p> Stake your HYEH-WFTM LP in the <StyledLink href="/vc">VC</StyledLink> to earn YEHSHARE rewards.</p>
-              <p> Then stake your earned YEHSHARE in <StyledLink href="/dubai">Dubai</StyledLink> to earn more HYEH!</p>
+              <p> Stake your HYEH-WFTM LP in the <StyledLink href="/vc">VC</StyledLink> to earn $EHSHARE rewards.</p>
+              <p> Then stake your earned $YEHSHARE in <StyledLink href="/dubai">Dubai</StyledLink> to earn more $HYEH!</p>
               <p> Together, let's print like billionaires while also printing for those in need.</p>
             </Box>
           </Paper>

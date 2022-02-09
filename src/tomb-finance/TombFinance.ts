@@ -404,7 +404,7 @@ export class TombFinance {
   ): Promise<BigNumber> {
     const pool = this.contracts[poolName];
     try {
-      if (earnTokenName === 'TOMB') {
+      if (earnTokenName === 'HYEH') {
         return await pool.pendingTOMB(poolId, account);
       } else {
         return await pool.pendingShare(poolId, account);
