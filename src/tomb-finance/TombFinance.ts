@@ -405,7 +405,7 @@ export class TombFinance {
     const pool = this.contracts[poolName];
     try {
       if (earnTokenName === 'HYEH') {
-        return await pool.pendingTOMB(poolId, account);
+        return await pool.pendingHYEH(poolId, account);
       } else {
         return await pool.pendingShare(poolId, account);
       }
