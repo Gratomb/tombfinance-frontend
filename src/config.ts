@@ -97,7 +97,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     name: 'Earn HYEH by TBOND',
     poolId: 4,
     sectionInUI: 0,
-    contract: 'TombTBondGenesisRewardPool',
+    contract: 'TombTombBondGenesisRewardPool',
     depositTokenName: 'TBOND',
     earnTokenName: 'HYEH',
     finished: false,
