@@ -146,7 +146,7 @@ const Home = () => {
           <Paper>
             <Box p={4}>
               <h2>Welcome to Hyeh Finance,</h2>
-              <p> The first seignorage protocol across all chains delivering impactful, real-world utility. Ever think you could change the world while printing? Well, now you can. </p>
+              <p> The first seigniorage protocol across all chains delivering impactful, real-world utility. Ever think you could change the world while printing? Well, now you can. </p>
               <p> $HYEH is our native algorithmic stablecoin pegged to the price of 1 $FTM.</p>
               <p> Stake your HYEH-WFTM LP in the <StyledLink href="/vc">VC</StyledLink> to earn YEHSHARE rewards.</p>
               <p> Then stake your earned YEHSHARE in <StyledLink href="/dubai">Dubai</StyledLink> to earn more HYEH!</p>
@@ -190,20 +190,20 @@ const Home = () => {
               </Button>
               <Button
                 target="_blank"
-                href="https://spookyswap.finance/swap?outputCurrency=0x14def7584a6c52f470ca4f4b9671056b22f4ffde"
+                href="https://spookyswap.finance/swap?outputCurrency=0x0CB0A530cB554f2a2DFDD48090F61234865425c4"
                 variant="contained"
                 style={{ marginRight: '10px' }}
                 className={classes.button}
               >
                 Buy HYEH
               </Button>
-              <Button variant="contained" target="_blank" href="https://spookyswap.finance/swap?outputCurrency=0x6437adac543583c4b31bf0323a0870430f5cc2e7" style={{ marginRight: '10px' }} className={classes.button}>
+              <Button variant="contained" target="_blank" href="https://spookyswap.finance/swap?outputCurrency=0x1Af917F53C48f50DB5bc6CEE1464b631bc1f40f9" style={{ marginRight: '10px' }} className={classes.button}>
                 Buy YEHSHARE
               </Button>
-              <Button variant="contained" target="_blank" href="https://dexscreener.com/fantom/0x83a52eff2e9d112e9b022399a9fd22a9db7d33ae" style={{ marginRight: '10px' }} className={classes.button}>
+              <Button variant="contained" target="_blank" href="https://dexscreener.com/fantom/0x7b065c1bb925c3ae7d7abaa406ad939befe2eb11" style={{ marginRight: '10px' }} className={classes.button}>
                 HYEH Chart
               </Button>
-              <Button variant="contained" target="_blank" href="https://dexscreener.com/fantom/0xd352dac95a91afefb112dbbb3463ccfa5ec15b65" className={classes.button}>
+              <Button variant="contained" target="_blank" href="https://dexscreener.com/fantom/0x26d6a54c72507f387fa3a0aae5c2b62098a49786" className={classes.button}>
                 YEHSHARE Chart
               </Button>
             </CardContent>
