@@ -170,6 +170,7 @@ const Home = () => {
         {/* TVL */}
         <Grid item xs={12} sm={4}>
           <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
+          <CardContent align="center">
               <h2>Total Val-yeh Locked</h2>
               <CountUp style={{ fontSize: '25px' }} end={TVL} separator="," prefix="$" />
             </CardContent>
