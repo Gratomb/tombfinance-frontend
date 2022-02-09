@@ -268,17 +268,17 @@ export class TombFinance {
       if (!contractName.endsWith('TombRewardPool')) {
         const rewardPerSecond = await poolContract.tombPerSecond();
         if (depositTokenName === 'WFTM') {
-          return rewardPerSecond.mul(6000).div(11000).div(24);
+          return rewardPerSecond.mul(2100).div(25000).div(24).mul(3600);
         } else if (depositTokenName === 'TOMBBOND') {
-          return rewardPerSecond.mul(2500).div(11000).div(24);
+          return rewardPerSecond.mul(1100).div(25000).div(24).mul(3600);
         } else if (depositTokenName === 'TSHARE') {
-          return rewardPerSecond.mul(1000).div(11000).div(24);
+          return rewardPerSecond.mul(1800).div(25000).div(24).mul(3600);
         } else if (depositTokenName === 'TOMB') {
-          return rewardPerSecond.mul(1500).div(11000).div(24);
+          return rewardPerSecond.mul(1600).div(25000).div(24).mul(3600);
         } else if (depositTokenName === 'DAI') {
-          return rewardPerSecond.mul(1500).div(11000).div(24);
+          return rewardPerSecond.mul(1100).div(25000).div(48).mul(3600);
         }
-        return rewardPerSecond.div(24);
+        return rewardPerSecond.div(48).mul(3600);
       }
       const poolStartTime = await poolContract.poolStartTime();
       const startDateTime = new Date(poolStartTime.toNumber() * 1000);
