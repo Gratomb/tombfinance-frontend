@@ -120,7 +120,7 @@ export class TombFinance {
     const lpToken = this.externalTokens[name];
     const lpTokenSupplyBN = await lpToken.totalSupply();
     const lpTokenSupply = getDisplayBalance(lpTokenSupplyBN, 18);
-    const token0 = name.startsWith('WFTM') ? this.TOMB : this.TSHARE;
+    const token0 = name.startsWith('HYEH') ? this.TOMB : this.TSHARE;
     const isTomb = name.startsWith('HYEH');
     const tokenAmountBN = await token0.balanceOf(lpToken.address);
     const tokenAmount = getDisplayBalance(tokenAmountBN, 18);
@@ -308,12 +308,10 @@ export class TombFinance {
     if (tokenName === 'WFTM') {
       tokenPrice = priceOfOneFtmInDollars;
     } else {
-      if (tokenName === 'TOMB-FTM-LP') {
-        tokenPrice = await this.getLPTokenPrice(token, this.TOMB, true);
-      } else if (tokenName === 'TSHARE-FTM-LP') {
+      if (tokenName === 'HYEH-WFTM LP') {
+        tokenPrice = await this.getLPTokenPrice(token, this.TOMB,  true);
+      } else if (tokenName === 'YEHSHARE-WFTM LP') {
         tokenPrice = await this.getLPTokenPrice(token, this.TSHARE, false);
-      } else if (tokenName === 'TOMB') {
-        tokenPrice = await this.getTokenPriceFromSpiritswap(token);
       } else {
         tokenPrice = await this.getTokenPriceFromPancakeswap(token);
         tokenPrice = (Number(tokenPrice) * Number(priceOfOneFtmInDollars)).toString();
