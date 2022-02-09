@@ -12,7 +12,7 @@ const configurations: { [env: string]: Configuration } = {
     deployments: require('./tomb-finance/deployments/deployments.mainnet.json'),
     externalTokens: {
       WFTM: ['0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83', 18],
-      FUSDT: ['0x049d68029688eabf473097a2fc38ef61633a3c7a', 6], // This is actually usdc on mainnet not fusdt
+      FUSDT: ['0x04068da6c83afcfa0e13ba15a6696662335d5b75', 6], // This is actually usdc on mainnet not fusdt
       USDC: ['0x74b23882a30290451A17c44f4F05243b6b58C76d', 18],
       YEHSHARE: ['0x1af917f53c48f50db5bc6cee1464b631bc1f40f9', 18],
       HYEH: ['0x0cb0a530cb554f2a2dfdd48090f61234865425c4', 18],
