@@ -182,10 +182,10 @@ const Home = () => {
           <Card style={{ height: '100%' }}>
             <CardContent align="center" style={{ marginTop: '2.5%' }}>
               {/* <h2 style={{ marginBottom: '20px' }}>Wallet Balance</h2> */}
-              <Button color="primary" href="/masonry" variant="contained" style={{ marginRight: '10px' }}>
+              <Button color="primary" href="/vc" variant="contained" style={{ marginRight: '10px' }}>
                 Stake Now
               </Button>
-              <Button color="primary" href="/masonry" variant="contained" style={{ marginRight: '10px' }}>
+              <Button color="primary" href="/dubai" variant="contained" style={{ marginRight: '10px' }}>
                 Farm Now
               </Button>
               <Button
