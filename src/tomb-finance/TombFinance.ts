@@ -46,9 +46,9 @@ export class TombFinance {
     for (const [symbol, [address, decimal]] of Object.entries(externalTokens)) {
       this.externalTokens[symbol] = new ERC20(address, provider, symbol, decimal);
     }
-    this.TOMB = new ERC20(deployments.tomb.address, provider, 'HYEH');
-    this.TSHARE = new ERC20(deployments.tShare.address, provider, 'YEHSHARE');
-    this.TBOND = new ERC20(deployments.tBond.address, provider, 'YEHBOND');
+    this.TOMB = new ERC20(deployments.tomb.address, provider, 'TOMB');
+    this.TSHARE = new ERC20(deployments.tShare.address, provider, 'TSHARE');
+    this.TBOND = new ERC20(deployments.tBond.address, provider, 'TBOND');
     this.FTM = this.externalTokens['WFTM'];
 
     // Uniswap V2 Pair
