@@ -14,8 +14,8 @@ const configurations: { [env: string]: Configuration } = {
       WFTM: ['0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83', 18],
       FUSDT: ['0x049d68029688eabf473097a2fc38ef61633a3c7a', 6], // This is actually usdc on mainnet not fusdt
       USDC: ['0x04068da6c83afcfa0e13ba15a6696662335d5b75', 6],
-      TSHARE: ['0x1af917f53c48f50db5bc6cee1464b631bc1f40f9', 18],
-      TOMB: ['0x0cb0a530cb554f2a2dfdd48090f61234865425c4', 18],
+      YEHSHARE: ['0x1af917f53c48f50db5bc6cee1464b631bc1f40f9', 18],
+      HYEH: ['0x0cb0a530cb554f2a2dfdd48090f61234865425c4', 18],
       'USDT-FTM-LP': ['0x2b4C76d0dc16BE1C31D4C1DC53bF9B45987Fc75c', 18],
       'TOMB-FTM-LP': ['0x7B065c1Bb925c3ae7d7ABaA406aD939bEFe2eb11', 18],
       'TSHARE-FTM-LP': ['0x26D6A54c72507f387fa3a0AAe5c2B62098a49786', 18],
