@@ -16,6 +16,8 @@ const configurations: { [env: string]: Configuration } = {
       WETH: ['0x74b23882a30290451A17c44f4F05243b6b58C76d', 18],
       YEHSHARE: ['0x1af917f53c48f50db5bc6cee1464b631bc1f40f9', 18],
       HYEH: ['0x0cb0a530cb554f2a2dfdd48090f61234865425c4', 18],
+      TOMB: ['0x6c021ae822bea943b2e66552bde1d2696a53fbb7', 18],
+      TSHARE: ['0x4cdf39285d7ca8eb3f090fda0c069ba5f4145b37', 18],
       'USDT-FTM-LP': ['0x2b4C76d0dc16BE1C31D4C1DC53bF9B45987Fc75c', 18],
       'HYEH-WFTM LP': ['0x7B065c1Bb925c3ae7d7ABaA406aD939bEFe2eb11', 18],
       'YEHSHARE-WFTM LP': ['0x26D6A54c72507f387fa3a0AAe5c2B62098a49786', 18],
@@ -29,6 +31,7 @@ const configurations: { [env: string]: Configuration } = {
   },
 };
 
+const newLocal = 'TombShibaGenesisRewardPool';
 export const bankDefinitions: { [contractName: string]: BankInfo } = {
   /*
   Explanation:
