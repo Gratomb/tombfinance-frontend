@@ -57,7 +57,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     finished: false,
     multiplier: '30x',
     sort: 1,
-    closedForStaking: false,
+    closedForStaking: true,
   },
   TombBooRewardPool: {
     name: 'Earn HYEH by WETH',
