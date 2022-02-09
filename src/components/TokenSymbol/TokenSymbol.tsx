@@ -13,7 +13,7 @@ import yehShareFtmLpLogo from '../../assets/img/yehshare_ftm_lp.png';
 import wftmLogo from '../../assets/img/ftm_logo_blue.svg';
 import tombBondLogo from '../../assets/img/spooky.png';
 import tombLogo from '../../assets/img/tomb_logo.png';
-import tShareLogo from '../../assets/img/tshare_logo.png';
+import twoShareLogo from '../../assets/img/tshare_logo.png';
 import daiLogo from '../../assets/img/dai_logo.png';
 
 const logosBySymbol: { [title: string]: string } = {
@@ -21,7 +21,7 @@ const logosBySymbol: { [title: string]: string } = {
   //=====================
   HYEHPNG: hyehLogoPNG,
   YEHSHAREPNG: yehShareLogoPNG,
-  TSHARE: tShareLogo,
+  '2SHARE': twoShareLogo,
   TBOND: tBondLogo,
   WFTM: wftmLogo,
   TOMBBOND: tombBondLogo,

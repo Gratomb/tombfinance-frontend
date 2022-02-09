@@ -271,7 +271,7 @@ export class TombFinance {
           return rewardPerSecond.mul(6000).div(11000).div(24);
         } else if (depositTokenName === 'TOMBBOND') {
           return rewardPerSecond.mul(2500).div(11000).div(24);
-        } else if (depositTokenName === 'TSHARE') {
+        } else if (depositTokenName === '2SHARE') {
           return rewardPerSecond.mul(1000).div(11000).div(24);
         } else if (depositTokenName === 'TOMB') {
           return rewardPerSecond.mul(1500).div(11000).div(24);
