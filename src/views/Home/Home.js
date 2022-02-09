@@ -169,8 +169,8 @@ const Home = () => {
 
         {/* TVL */}
         <Grid item xs={12} sm={4}>
-          <Card style={{ backgroundColor: "grey", boxShadow: "none", border: "1px solid var(--white)" }}>
-          <CardContent align="center">
+          <Card>
+            <CardContent align="center">
               <h2>Total Val-yeh Locked</h2>
               <CountUp style={{ fontSize: '25px' }} end={TVL} separator="," prefix="$" />
             </CardContent>
@@ -179,7 +179,7 @@ const Home = () => {
 
         {/* Wallet */}
         <Grid item xs={12} sm={8}>
-        <Card style={{ height: '100%', backgroundColor: "grey", boxShadow: "none", border: "1px solid var(--white)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <Card style={{ height: '100%' }}>
             <CardContent align="center" style={{ marginTop: '2.5%' }}>
               {/* <h2 style={{ marginBottom: '20px' }}>Wallet Balance</h2> */}
               <Button color="primary" href="/masonry" variant="contained" style={{ marginRight: '10px' }}>
@@ -211,7 +211,7 @@ const Home = () => {
         </Grid>
         {/* TOMB */}
         <Grid item xs={12} sm={4}>
-          <Card style={{ backgroundColor: "grey", boxShadow: "none", border: "1px solid var(--white)" }}>
+          <Card>
             <CardContent align="center" style={{ position: 'relative' }}>
               <h2>HYEH</h2>
               {/*<Button
@@ -225,9 +225,9 @@ const Home = () => {
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
               </Button>*/}
-              <Box mt={2} style={{ backgroundColor: "grey !important" }}>
-                <CardIcon style={{ backgroundColor: "grey !important" }}>
-                  <TokenSymbol symbol="HYEH" style={{ backgroundColor: "grey !important" }} />
+              <Box mt={2}>
+                <CardIcon>
+                  <TokenSymbol symbol="TOMB" />
                 </CardIcon>
               </Box>
               Current Price
@@ -250,7 +250,7 @@ const Home = () => {
 
         {/* TSHARE */}
         <Grid item xs={12} sm={4}>
-          <Card style={{ backgroundColor: "grey", boxShadow: "none", border: "1px solid var(--white)" }}>
+          <Card>
             <CardContent align="center" style={{ position: 'relative' }}>
               <h2>YEHSHARE</h2>
               {/*<Button
@@ -287,7 +287,7 @@ const Home = () => {
 
         {/* TBOND */}
         <Grid item xs={12} sm={4}>
-        <Card style={{ backgroundColor: "grey", boxShadow: "none", border: "1px solid var(--white)" }}>
+          <Card>
             <CardContent align="center" style={{ position: 'relative' }}>
               <h2>YEHBOND</h2>
               {/*<Button
@@ -322,7 +322,7 @@ const Home = () => {
           </Card>
         </Grid>
         <Grid item xs={12} sm={6}>
-        <Card style={{ backgroundColor: "grey", boxShadow: "none", border: "1px solid var(--white)" }}>
+          <Card>
             <CardContent align="center">
               <h2>HYEH-WFTM Spooky LP</h2>
               <Box mt={2}>
@@ -350,7 +350,7 @@ const Home = () => {
           </Card>
         </Grid>
         <Grid item xs={12} sm={6}>
-        <Card style={{ backgroundColor: "grey", boxShadow: "none", border: "1px solid var(--white)" }}>
+          <Card>
             <CardContent align="center">
               <h2>YEHSHARE-WFTM Spooky LP</h2>
               <Box mt={2}>
