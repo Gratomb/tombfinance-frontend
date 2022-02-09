@@ -214,7 +214,7 @@ const Home = () => {
           <Card>
             <CardContent align="center" style={{ position: 'relative' }}>
               <h2>HYEH</h2>
-              <Button
+              {/*<Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TOMB');
                 }}
@@ -224,7 +224,7 @@ const Home = () => {
               >
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
-              </Button>
+              </Button>*/}
               <Box mt={2}>
                 <CardIcon>
                   <TokenSymbol symbol="HYEH" />
@@ -253,7 +253,7 @@ const Home = () => {
           <Card>
             <CardContent align="center" style={{ position: 'relative' }}>
               <h2>YEHSHARE</h2>
-              <Button
+              {/*<Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TSHARE');
                 }}
@@ -263,7 +263,7 @@ const Home = () => {
               >
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
-              </Button>
+              </Button>*/}
               <Box mt={2}>
                 <CardIcon>
                   <TokenSymbol symbol="YEHSHARE" />
@@ -290,7 +290,7 @@ const Home = () => {
           <Card>
             <CardContent align="center" style={{ position: 'relative' }}>
               <h2>YEHBOND</h2>
-              <Button
+              {/*<Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TBOND');
                 }}
@@ -300,7 +300,7 @@ const Home = () => {
               >
                 +&nbsp;
                 <img alt="metamask fox" style={{ width: '20px' }} src={MetamaskFox} />
-              </Button>
+              </Button>*/}
               <Box mt={2}>
                 <CardIcon>
                   <TokenSymbol symbol="TBOND" />
@@ -330,7 +330,7 @@ const Home = () => {
                   <TokenSymbol symbol="TOMB-FTM-LP" />
                 </CardIcon>
               </Box>
-              <Box mt={2}>
+              {/*<Box mt={2}>
                 <Button color="primary" disabled={true} onClick={onPresentTombZap} variant="contained">
                   Zap In
                 </Button>
@@ -340,7 +340,7 @@ const Home = () => {
                   {tombLPStats?.tokenAmount ? tombLPStats?.tokenAmount : '-.--'} TOMB /{' '}
                   {tombLPStats?.ftmAmount ? tombLPStats?.ftmAmount : '-.--'} FTM
                 </span>
-              </Box>
+            </Box>*/}
               <Box>${tombLPStats?.priceOfOne ? tombLPStats.priceOfOne : '-.--'}</Box>
               <span style={{ fontSize: '12px' }}>
                 Liquidity: ${tombLPStats?.totalLiquidity ? tombLPStats.totalLiquidity : '-.--'} <br />
@@ -358,11 +358,11 @@ const Home = () => {
                   <TokenSymbol symbol="TSHARE-FTM-LP" />
                 </CardIcon>
               </Box>
-              <Box mt={2}>
+              {/*<Box mt={2}>
                 <Button color="primary" onClick={onPresentTshareZap} variant="contained">
                   Zap In
                 </Button>
-              </Box>
+          </Box>*/}
               <Box mt={2}>
                 <span style={{ fontSize: '26px' }}>
                   {tshareLPStats?.tokenAmount ? tshareLPStats?.tokenAmount : '-.--'} TSHARE /{' '}
