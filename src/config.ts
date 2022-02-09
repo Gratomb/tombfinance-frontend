@@ -98,7 +98,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
   },
   TombDaiRewardPool: {
     name: 'Earn HYEH by DAI',
-    poolId: 3,
+    poolId: 4,
     sectionInUI: 0,
     contract: 'TombDaiGenesisRewardPool',
     depositTokenName: 'DAI',
