@@ -11,7 +11,7 @@ import hyehFtmLpLogo from '../../assets/img/hyeh_ftm_lp.png';
 import yehShareFtmLpLogo from '../../assets/img/yehshare_ftm_lp.png';
 
 import wftmLogo from '../../assets/img/ftm_logo_blue.svg';
-import bondLogo from '../../assets/img/spooky.png';
+import tombBondLogo from '../../assets/img/spooky.png';
 import tombLogo from '../../assets/img/tomb_logo.png';
 import tShareLogo from '../../assets/img/tshare_logo.png';
 import daiLogo from '../../assets/img/dai_logo.png';
@@ -24,7 +24,7 @@ const logosBySymbol: { [title: string]: string } = {
   TSHARE: tShareLogo,
   TBOND: tBondLogo,
   WFTM: wftmLogo,
-  BOND: bondLogo,
+  TOMBBOND: tombBondLogo,
   TOMB: tombLogo,
   HYEH: hyehLogo,
   YEHSHARE: yehShareLogo,

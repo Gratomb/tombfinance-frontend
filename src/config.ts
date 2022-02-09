@@ -13,7 +13,7 @@ const configurations: { [env: string]: Configuration } = {
     externalTokens: {
       WFTM: ['0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83', 18],
       FUSDT: ['0x04068da6c83afcfa0e13ba15a6696662335d5b75', 6], // This is actually usdc on mainnet not fusdt
-      BOND: ['0x24248cd1747348bdc971a5395f4b3cd7fee94ea0', 18],
+      TBOND: ['0x24248cd1747348bdc971a5395f4b3cd7fee94ea0', 18],
       YEHSHARE: ['0x1af917f53c48f50db5bc6cee1464b631bc1f40f9', 18],
       HYEH: ['0x0cb0a530cb554f2a2dfdd48090f61234865425c4', 18],
       TOMB: ['0x6c021ae822bea943b2e66552bde1d2696a53fbb7', 18],
@@ -61,11 +61,11 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     closedForStaking: false,
   },
   TombBooRewardPool: {
-    name: 'Earn HYEH by TBOND',
+    name: 'Earn HYEH by TOMBBOND',
     poolId: 1,
     sectionInUI: 0,
     contract: 'TombBooGenesisRewardPool',
-    depositTokenName: 'BOND',
+    depositTokenName: 'TOMBBOND',
     earnTokenName: 'HYEH',
     finished: false,
     multiplier: '225x',
