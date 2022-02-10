@@ -94,9 +94,9 @@ export class TombFinance {
   //===================================================================
 
   async getTombStat(): Promise<TokenStat> {
-    const { TombFtmRewardPool } = this.contracts;
+    const { TombFtmGenesisRewardPool } = this.contracts;
     const supply = await this.TOMB.totalSupply();
-    const tombRewardPoolSupply = await this.TOMB.balanceOf(TombFtmRewardPool.address);
+    const tombRewardPoolSupply = await this.TOMB.balanceOf(TombFtmGenesisRewardPool.address);
     const tombCirculatingSupply = supply
       .sub(tombRewardPoolSupply)
     const priceInFTM = await this.getTokenPriceFromPancakeswap(this.TOMB);
@@ -192,11 +192,11 @@ export class TombFinance {
   }
 
   async getTombStatInEstimatedTWAP(): Promise<TokenStat> {
-    const { SeigniorageOracle, TombFtmRewardPool } = this.contracts;
+    const { SeigniorageOracle, TombFtmGenesisRewardPool } = this.contracts;
     const expectedPrice = await SeigniorageOracle.twap(this.TOMB.address, ethers.utils.parseEther('1'));
 
     const supply = await this.TOMB.totalSupply();
-    const tombRewardPoolSupply = await this.TOMB.balanceOf(TombFtmRewardPool.address);
+    const tombRewardPoolSupply = await this.TOMB.balanceOf(TombFtmGenesisRewardPool.address);
     const tombCirculatingSupply = supply.sub(tombRewardPoolSupply);
     return {
       tokenInFtm: getDisplayBalance(expectedPrice),
@@ -265,7 +265,7 @@ export class TombFinance {
     depositTokenName: string,
   ) {
     if (earnTokenName === 'HYEH') {
-      if (!contractName.endsWith('TombRewardPool')) {
+      if (!contractName.endsWith('GenesisRewardPool')) {
         const rewardPerSecond = await poolContract.tombPerSecond();
         if (depositTokenName === 'WFTM') {
           return rewardPerSecond.mul(2100).div(25000).div(48).mul(3600);
@@ -405,7 +405,7 @@ export class TombFinance {
     const pool = this.contracts[poolName];
     try {
       if (earnTokenName === 'HYEH') {
-        return await pool.pendingTOMB(poolId, account);
+        return await pool.pendingHYEH(poolId, account);
       } else {
         return await pool.pendingShare(poolId, account);
       }
