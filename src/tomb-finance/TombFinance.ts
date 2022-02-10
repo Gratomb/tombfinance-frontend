@@ -94,9 +94,9 @@ export class TombFinance {
   //===================================================================
 
   async getTombStat(): Promise<TokenStat> {
-    const { TombFtmGenesisRewardPool } = this.contracts;
+    const { HyehWftmGenesisRewardPool } = this.contracts;
     const supply = await this.TOMB.totalSupply();
-    const tombRewardPoolSupply = await this.TOMB.balanceOf(TombFtmGenesisRewardPool.address);
+    const tombRewardPoolSupply = await this.TOMB.balanceOf(HyehWftmGenesisRewardPool.address);
     const tombCirculatingSupply = supply
       .sub(tombRewardPoolSupply)
     const priceInFTM = await this.getTokenPriceFromPancakeswap(this.TOMB);
@@ -192,11 +192,11 @@ export class TombFinance {
   }
 
   async getTombStatInEstimatedTWAP(): Promise<TokenStat> {
-    const { SeigniorageOracle, TombFtmGenesisRewardPool } = this.contracts;
+    const { SeigniorageOracle, HyehWftmGenesisRewardPool } = this.contracts;
     const expectedPrice = await SeigniorageOracle.twap(this.TOMB.address, ethers.utils.parseEther('1'));
 
     const supply = await this.TOMB.totalSupply();
-    const tombRewardPoolSupply = await this.TOMB.balanceOf(TombFtmGenesisRewardPool.address);
+    const tombRewardPoolSupply = await this.TOMB.balanceOf(HyehWftmGenesisRewardPool.address);
     const tombCirculatingSupply = supply.sub(tombRewardPoolSupply);
     return {
       tokenInFtm: getDisplayBalance(expectedPrice),

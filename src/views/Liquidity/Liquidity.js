@@ -36,7 +36,7 @@ const ProvideLiquidity = () => {
   const tombBalance = useTokenBalance(tombFinance.TOMB);
   const ftmBalance = (balance / 1e18).toFixed(4);
   const { onProvideTombFtmLP } = useProvideTombFtmLP();
-  const tombFtmLpStats = useLpStats('TOMB-FTM-LP');
+  const tombFtmLpStats = useLpStats('HYEH-WFTM LP');
 
   const tombLPStats = useMemo(() => (tombFtmLpStats ? tombFtmLpStats : null), [tombFtmLpStats]);
   const tombPriceInFTM = useMemo(() => (tombStats ? Number(tombStats.tokenInFtm).toFixed(2) : null), [tombStats]);
@@ -49,7 +49,7 @@ const ProvideLiquidity = () => {
     }
     if (!isNumeric(e.currentTarget.value)) return;
     setTombAmount(e.currentTarget.value);
-    const quoteFromSpooky = await tombFinance.quoteFromSpooky(e.currentTarget.value, 'TOMB');
+    const quoteFromSpooky = await tombFinance.quoteFromSpooky(e.currentTarget.value, 'HYEH');
     setFtmAmount(quoteFromSpooky);
     setLpTokensAmount(quoteFromSpooky / tombLPStats.ftmAmount);
   };
@@ -66,7 +66,7 @@ const ProvideLiquidity = () => {
     setLpTokensAmount(quoteFromSpooky / tombLPStats.tokenAmount);
   };
   const handleTombSelectMax = async () => {
-    const quoteFromSpooky = await tombFinance.quoteFromSpooky(getDisplayBalance(tombBalance), 'TOMB');
+    const quoteFromSpooky = await tombFinance.quoteFromSpooky(getDisplayBalance(tombBalance), 'HYEH ');
     setTombAmount(getDisplayBalance(tombBalance));
     setFtmAmount(quoteFromSpooky);
     setLpTokensAmount(quoteFromSpooky / tombLPStats.ftmAmount);

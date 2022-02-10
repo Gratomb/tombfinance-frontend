@@ -45,8 +45,8 @@ const useStyles = makeStyles((theme) => ({
 const Home = () => {
   const classes = useStyles();
   const TVL = useTotalValueLocked();
-  const tombFtmLpStats = useLpStats('TOMB-FTM-LP');
-  const tShareFtmLpStats = useLpStats('TSHARE-FTM-LP');
+  const tombFtmLpStats = useLpStats('HYEH-WFTM LP');
+  const tShareFtmLpStats = useLpStats('YEHSHARE-WFTM LP');
   const tombStats = useTombStats();
   const tShareStats = usetShareStats();
   const tBondStats = useBondStats();

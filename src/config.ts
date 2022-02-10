@@ -48,11 +48,11 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
   finished: will disable the pool on the UI if set to true
   sort: the order of the pool
   */
-  TombFtmGenesisRewardPool: {
+  HyehWftmGenesisRewardPool: {
     name: 'Earn HYEH by FTM',
     poolId: 0,
     sectionInUI: 0,
-    contract: 'TombFtmGenesisRewardPool',
+    contract: 'HyehWftmGenesisRewardPool',
     depositTokenName: 'WFTM',
     earnTokenName: 'HYEH',
     finished: false,
@@ -132,11 +132,11 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     sort: 9,
     closedForStaking: true,
   },
-  TombFtmLPTShareRewardPool: {
+  HyehWftmLPYehShareRewardPool: {
     name: 'Earn TSHARE by TOMB-FTM LP',
     poolId: 0,
     sectionInUI: 2,
-    contract: 'TombFtmLPTShareRewardPool',
+    contract: 'HyehWftmLPYehShareRewardPool',
     depositTokenName: 'TOMB-FTM-LP',
     earnTokenName: 'TSHARE',
     finished: false,
