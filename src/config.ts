@@ -61,15 +61,15 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     closedForStaking: false,
   },
   TombBooRewardPool: {
-    name: 'Earn HYEH by HYEH-wFTM LP',
-    poolId: 1,
+    name: 'Earn HYEH by HYEH-WFTM LP',
+    poolId: 5,
     sectionInUI: 0,
     contract: 'TombBooGenesisRewardPool',
     depositTokenName: 'HYEH-WFTM LP',
     earnTokenName: 'HYEH',
     finished: false,
     multiplier: '6920x',
-    sort: 2,
+    sort: 6,
     closedForStaking: false,
   },
   TombShibaRewardPool: {
