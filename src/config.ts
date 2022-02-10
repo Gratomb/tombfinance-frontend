@@ -22,8 +22,6 @@ const configurations: { [env: string]: Configuration } = {
       'USDT-FTM-LP': ['0x2b4C76d0dc16BE1C31D4C1DC53bF9B45987Fc75c', 18],
       'HYEH-WFTM LP': ['0x7B065c1Bb925c3ae7d7ABaA406aD939bEFe2eb11', 18],
       'YEHSHARE-WFTM LP': ['0x26D6A54c72507f387fa3a0AAe5c2B62098a49786', 18],
-      'TOMB-FTM-LP': ['0x7B065c1Bb925c3ae7d7ABaA406aD939bEFe2eb11', 18],
-      'TSHARE-FTM-LP': ['0x26D6A54c72507f387fa3a0AAe5c2B62098a49786', 18],
     },
     baseLaunchDate: new Date('2021-06-02 13:00:00Z'),
     bondLaunchesAt: new Date('2020-12-03T15:00:00Z'),
@@ -32,7 +30,6 @@ const configurations: { [env: string]: Configuration } = {
   },
 };
 
-const newLocal = 'TombShibaGenesisRewardPool';
 export const bankDefinitions: { [contractName: string]: BankInfo } = {
   /*
   Explanation:
@@ -40,7 +37,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
   poolId: the poolId assigned in the contract
   sectionInUI: way to distinguish in which of the 3 pool groups it should be listed
         - 0 = Single asset stake pools
-        - 1 = LP asset staking rewarding TOMB
+        - 1 = LP asset staking rewarding HYEH
         - 2 = LP asset staking rewarding TSHARE
   contract: the contract name which will be loaded from the deployment.environmnet.json
   depositTokenName : the name of the token to be deposited
@@ -60,7 +57,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     sort: 1,
     closedForStaking: false,
   },
-  TombBooRewardPool: {
+  TombBooGenesisRewardPool: {
     name: 'Earn HYEH by HYEH-WFTM LP',
     poolId: 5,
     sectionInUI: 0,
@@ -72,7 +69,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     sort: 6,
     closedForStaking: false,
   },
-  TombShibaRewardPool: {
+  TombShibaGenesisRewardPool: {
     name: 'Earn HYEH by TOMB',
     poolId: 2,
     sectionInUI: 0,
@@ -84,7 +81,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     sort: 3,
     closedForStaking: false,
   },
-  TombZooRewardPool: {
+  TombZooGenesisRewardPool: {
     name: 'Earn HYEH by TSHARE',
     poolId: 3,
     sectionInUI: 0,
@@ -96,7 +93,7 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     sort: 4,
     closedForStaking: false,
   },
-  TombDaiRewardPool: {
+  TombDaiGenesisRewardPool: {
     name: 'Earn HYEH by DAI',
     poolId: 4,
     sectionInUI: 0,
@@ -108,37 +105,13 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     sort: 5,
     closedForStaking: false,
   },
-  TombFtmLPTombRewardPool: {
-    name: 'Earn TOMB by TOMB-FTM LP',
-    poolId: 0,
-    sectionInUI: 1,
-    contract: 'TombFtmLpTombRewardPool',
-    depositTokenName: 'TOMB-FTM-LP',
-    earnTokenName: 'TOMB',
-    finished: false,
-    multiplier: '0x',
-    sort: 5,
-    closedForStaking: true,
-  },
-  TombFtmLPTombRewardPoolOld: {
-    name: 'Earn TOMB by TOMB-FTM LP',
-    poolId: 0,
-    sectionInUI: 1,
-    contract: 'TombFtmLpTombRewardPoolOld',
-    depositTokenName: 'TOMB-FTM-LP',
-    earnTokenName: 'TOMB',
-    finished: true,
-    multiplier: '0x',
-    sort: 9,
-    closedForStaking: true,
-  },
   TombFtmLPTShareRewardPool: {
-    name: 'Earn TSHARE by TOMB-FTM LP',
+    name: 'Earn YEHSHARE by YEHSHARE-FTM LP',
     poolId: 0,
     sectionInUI: 2,
     contract: 'TombFtmLPTShareRewardPool',
-    depositTokenName: 'TOMB-FTM-LP',
-    earnTokenName: 'TSHARE',
+    depositTokenName: 'HYEH-WFTM LP',
+    earnTokenName: 'YEHSHARE',
     finished: false,
     multiplier: '2400x',
     sort: 6,
@@ -149,8 +122,8 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     poolId: 1,
     sectionInUI: 2,
     contract: 'TshareFtmLPTShareRewardPool',
-    depositTokenName: 'TSHARE-FTM-LP',
-    earnTokenName: 'TSHARE',
+    depositTokenName: 'YEHSHARE-WFTM LP',
+    earnTokenName: 'YEHSHARE',
     finished: false,
     multiplier: '1600x',
     sort: 7,
