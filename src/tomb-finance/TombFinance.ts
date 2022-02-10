@@ -314,13 +314,6 @@ export class TombFinance {
         tokenPrice = await this.getLPTokenPrice(token, this.TOMB,  true);
       } else if (tokenName === 'YEHSHARE-WFTM LP') {
         tokenPrice = await this.getLPTokenPrice(token, this.TSHARE, false);
-      } else if (tokenName === 'TSHARE') {
-        tokenPrice = await this.getTokenPriceFromSpookyswap(token);
-        tokenPrice = 
-      
-      
-      
-      
       } else {
         tokenPrice = await this.getTokenPriceFromSpookyswap(token);
         tokenPrice = (Number(tokenPrice) * Number(priceOfOneFtmInDollars)).toString();
