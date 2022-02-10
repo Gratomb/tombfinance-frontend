@@ -15,6 +15,7 @@ import tombBondLogo from '../../assets/img/spooky.png';
 import tombLogo from '../../assets/img/tomb_logo.png';
 import tShareLogo from '../../assets/img/tshare_logo.png';
 import daiLogo from '../../assets/img/dai_logo.png';
+import hyehhFtmLpLogo from '../../assets/img/hyehh_ftm_lp.png';
 
 const logosBySymbol: { [title: string]: string } = {
   //Real tokens
@@ -31,6 +32,7 @@ const logosBySymbol: { [title: string]: string } = {
   DAI: daiLogo,
   'TOMB-FTM-LP': hyehFtmLpLogo,
   'TSHARE-FTM-LP': yehShareFtmLpLogo,
+  'HYEH-WFTM LP' : hyehhFtmLpLogo,
 };
 
 type LogoProps = {
