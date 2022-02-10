@@ -30,8 +30,7 @@ const logosBySymbol: { [title: string]: string } = {
   HYEH: hyehLogo,
   YEHSHARE: yehShareLogo,
   DAI: daiLogo,
-  'TOMB-FTM-LP': hyehFtmLpLogo,
-  'TSHARE-FTM-LP': yehShareFtmLpLogo,
+  'YEHSHARE-WFTM LP': yehShareFtmLpLogo,
   'HYEH-WFTM LP' : hyehhFtmLpLogo,
 };
 
