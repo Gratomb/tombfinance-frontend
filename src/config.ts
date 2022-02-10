@@ -144,13 +144,13 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
     sort: 6,
     closedForStaking: false,
   },
-  TshareFtmLPTShareRewardPool: {
-    name: 'Earn TSHARE by TSHARE-FTM LP',
+  YehShareWftmLPYehShareRewardPool: {
+    name: 'Earn YEHSHARE by YEHSHARE-WFTM LP',
     poolId: 1,
     sectionInUI: 2,
-    contract: 'TshareFtmLPTShareRewardPool',
-    depositTokenName: 'TSHARE-FTM-LP',
-    earnTokenName: 'TSHARE',
+    contract: 'YehShareWftmLPYehShareRewardPool',
+    depositTokenName: 'YEHSHARE-WFTM LP',
+    earnTokenName: 'YEHSHARE',
     finished: false,
     multiplier: '1600x',
     sort: 7,
