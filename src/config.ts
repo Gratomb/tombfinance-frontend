@@ -48,11 +48,11 @@ export const bankDefinitions: { [contractName: string]: BankInfo } = {
   finished: will disable the pool on the UI if set to true
   sort: the order of the pool
   */
-  TombFtmRewardPool: {
+  TombFtmGenesisRewardPool: {
     name: 'Earn HYEH by FTM',
     poolId: 0,
     sectionInUI: 0,
-    contract: 'TombFtmRewardPool',
+    contract: 'TombFtmGenesisRewardPool',
     depositTokenName: 'WFTM',
     earnTokenName: 'HYEH',
     finished: false,

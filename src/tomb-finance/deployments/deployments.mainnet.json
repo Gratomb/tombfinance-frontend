@@ -4567,7 +4567,7 @@
       }
     ]
   },
-  "TombFtmRewardPool": {
+  "TombFtmGenesisRewardPool": {
     "address": "0x8af1be38e8fd9a4fb3501737ce87e5eb52b74568",
     "abi": [
       {
