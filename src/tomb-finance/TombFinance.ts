@@ -99,8 +99,8 @@ export class TombFinance {
     const tombRewardPoolSupply = await this.TOMB.balanceOf(TombFtmGenesisRewardPool.address);
     const tombCirculatingSupply = supply
       .sub(tombRewardPoolSupply)
-    const priceInFTM = await this.getTokenPriceFromPancakeswap(this.TOMB);
-    const priceOfOneFTM = await this.getWFTMPriceFromPancakeswap();
+    const priceInFTM = await this.getTokenPriceFromSpookyswap(this.TOMB);
+    const priceOfOneFTM = await this.getWFTMPriceFromSpookyswap();
     const priceOfTombInDollars = (Number(priceInFTM) * Number(priceOfOneFTM)).toFixed(2);
 
     return {
@@ -177,10 +177,10 @@ export class TombFinance {
 
     const supply = await this.TSHARE.totalSupply();
 
-    const priceInFTM = await this.getTokenPriceFromPancakeswap(this.TSHARE);
+    const priceInFTM = await this.getTokenPriceFromSpookyswap(this.TSHARE);
     const tombRewardPoolSupply = await this.TSHARE.balanceOf(TombFtmLPTShareRewardPool.address);
     const tShareCirculatingSupply = supply.sub(tombRewardPoolSupply);
-    const priceOfOneFTM = await this.getWFTMPriceFromPancakeswap();
+    const priceOfOneFTM = await this.getWFTMPriceFromSpookyswap();
     const priceOfSharesInDollars = (Number(priceInFTM) * Number(priceOfOneFTM)).toFixed(2);
 
     return {
@@ -306,7 +306,7 @@ export class TombFinance {
    */
   async getDepositTokenPriceInDollars(tokenName: string, token: ERC20) {
     let tokenPrice;
-    const priceOfOneFtmInDollars = await this.getWFTMPriceFromPancakeswap();
+    const priceOfOneFtmInDollars = await this.getWFTMPriceFromSpookyswap();
     if (tokenName === 'WFTM') {
       tokenPrice = priceOfOneFtmInDollars;
     } else {
@@ -314,8 +314,15 @@ export class TombFinance {
         tokenPrice = await this.getLPTokenPrice(token, this.TOMB,  true);
       } else if (tokenName === 'YEHSHARE-WFTM LP') {
         tokenPrice = await this.getLPTokenPrice(token, this.TSHARE, false);
+      } else if (tokenName === 'TSHARE') {
+        tokenPrice = await this.getTokenPriceFromSpookyswap(token);
+        tokenPrice = 
+      
+      
+      
+      
       } else {
-        tokenPrice = await this.getTokenPriceFromPancakeswap(token);
+        tokenPrice = await this.getTokenPriceFromSpookyswap(token);
         tokenPrice = (Number(tokenPrice) * Number(priceOfOneFtmInDollars)).toString();
       }
     }
@@ -481,7 +488,7 @@ export class TombFinance {
     return this.masonryVersionOfUser !== 'latest';
   }
 
-  async getTokenPriceFromPancakeswap(tokenContract: ERC20): Promise<string> {
+  async getTokenPriceFromSpookyswap(tokenContract: ERC20): Promise<string> {
     const ready = await this.provider.ready;
     if (!ready) return;
     const { chainId } = this.config;
@@ -515,7 +522,7 @@ export class TombFinance {
       let ftmAmount = Number(getFullDisplayBalance(ftmBalanceInLP, WFTM.decimal));
       let shibaBalanceInLP = await tokenContract.balanceOf(liquidityToken.address);
       let shibaAmount = Number(getFullDisplayBalance(shibaBalanceInLP, tokenContract.decimal));
-      const priceOfOneFtmInDollars = await this.getWFTMPriceFromPancakeswap();
+      const priceOfOneFtmInDollars = await this.getWFTMPriceFromSpookyswap();
       let priceOfShiba = (ftmAmount / shibaAmount) * Number(priceOfOneFtmInDollars);
       return priceOfShiba.toString();
     } catch (err) {
@@ -523,7 +530,7 @@ export class TombFinance {
     }
   }
 
-  async getWFTMPriceFromPancakeswap(): Promise<string> {
+  async getWFTMPriceFromSpookyswap(): Promise<string> {
     const ready = await this.provider.ready;
     if (!ready) return;
     const { WFTM, FUSDT } = this.externalTokens;
